@@ -122,7 +122,7 @@ public:
         preorder(ptr->leftchild);
         preorder(ptr->rightchild);
     }
-    void posorder(Node *ptr)
+    void postorder(Node *ptr)
     {
         if (isEmpty())
         {
@@ -133,8 +133,8 @@ public:
         return;
         
         
-        posorder(ptr->leftchild);
-        posorder(ptr->rightchild);
+        postorder(ptr->leftchild);
+        postorder(ptr->rightchild);
         cout << ptr->info << " ";
     }
 };
