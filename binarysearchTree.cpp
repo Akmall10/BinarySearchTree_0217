@@ -89,7 +89,7 @@ public:
             if (element < currentNode -> info)
                 currentNode = currentNode->leftchild;
             else
-               currentNode
+               currentNode = currentNode->rightchild;
         }
     }
 }
